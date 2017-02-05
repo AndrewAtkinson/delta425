@@ -11,4 +11,4 @@
 |
 */
 
-$app->get('/', ['uses' => 'HomeController']);
+$app->get('/', ['use' => 'HomeController']);
