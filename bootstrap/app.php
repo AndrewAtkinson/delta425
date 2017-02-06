@@ -59,13 +59,13 @@ $app->singleton(
 |
 */
 
-// $app->middleware([
-//   App\Http\Middleware\ExampleMiddleware::class
-// ]);
+$app->middleware([
+   App\Http\Middleware\Access::class
+ ]);
 
-$app->routeMiddleware([
-  'access' => App\Http\Middleware\Access::class,
-]);
+//$app->routeMiddleware([
+ // 'access' => App\Http\Middleware\Access::class,
+//]);
 
 /*
 |--------------------------------------------------------------------------
