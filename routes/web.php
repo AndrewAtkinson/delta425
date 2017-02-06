@@ -11,4 +11,7 @@
 |
 */
 
-$app->get('/', ['uses' => 'HomeController']);
+$app->get('/', [
+  'middleware' => $m1,
+  'uses' => 'HomeController'
+]);
