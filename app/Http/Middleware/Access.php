@@ -29,7 +29,8 @@ class Access
    */
   public function check_dev_ip($request)
   {
-    return $request->ip() == env('APP_DEBUG_IP');
+    $ips = explode(',', env('APP_DEBUG_IP'))
+    return in_array($request->ip(), $ips);
   }
 
   /**
