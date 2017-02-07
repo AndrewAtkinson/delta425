@@ -14,3 +14,7 @@
 $app->get('/', [
   'uses' => 'HomeController@index'
 ]);
+
+$app->get('/coming-soon', function () {
+  return view('coming-soon');
+});
