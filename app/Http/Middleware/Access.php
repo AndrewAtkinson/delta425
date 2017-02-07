@@ -17,7 +17,7 @@ class Access
    */
   public function handle($request, Closure $next, $guard = null)
   {
-    if (!$this->check_dev_ip($request) && !$this->check_headers() && $this->debug_mode() && $this->check_route($request)) {
+    if ((!$this->check_dev_ip($request) || !$this->check_headers()) && $this->debug_mode() && $this->check_route($request)) {
       return redirect('coming-soon');
     }
     return $next($request);
@@ -29,15 +29,15 @@ class Access
    */
   public function check_dev_ip($request)
   {
-    return $request->ip() == env('APP_DEBUG_IP') ? true : false;
+    return $request->ip() == env('APP_DEBUG_IP');
   }
 
   /**
    * @return bool
    */
-  public function check_headers()
+  public function check_headers($request)
   {
-    return true;
+    return $request->server('HTTP_APPDEBUGKEY') == env('APP_DEBUG_KEY');
   }
 
   /**
