@@ -53,7 +53,6 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-12">
-        <img src="assets/img/logo.png" alt="Scoop Themes Logo">
         <br/>
         <br/>
         <h2 class="subtitle">We're working hard to launch our website and we'll be ready very soon</h2>
