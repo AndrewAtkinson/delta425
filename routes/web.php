@@ -12,7 +12,8 @@
 */
 
 $app->get('/', [
-  'uses' => 'HomeController@index'
+  'uses' => 'HomeController@index',
+  'middleware' => 'auth'
 ]);
 
 $app->get('/coming-soon', function () {

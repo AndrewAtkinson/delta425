@@ -61,12 +61,11 @@ $app->singleton(
 
 $app->middleware([
    App\Http\Middleware\Access::class,
-   /*App\Http\Middleware\Authenticate::class*/
  ]);
 
-//$app->routeMiddleware([
- // 'access' => App\Http\Middleware\Access::class,
-//]);
+$app->routeMiddleware([
+  'auth' => App\Http\Middleware\Authenticate::class,
+]);
 
 /*
 |--------------------------------------------------------------------------
