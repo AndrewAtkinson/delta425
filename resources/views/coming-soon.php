@@ -68,20 +68,20 @@
       </div>
       <div class="col-sm-12 align-center">
         <ul class="social-network social-circle">
-          <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+          <li><a href="https://www.facebook.com/andyatkinson84" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
           </li>
-          <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+          <li><a href="https://twitter.com/fever84" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
           </li>
-          <li><a href="#" class="icoGit" title="Github"><i class="fa fa-github"></i></a>
+          <li><a href="https://github.com/AndrewAtkinson" class="icoGit" title="Github"><i class="fa fa-github"></i></a>
           </li>
-          <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+          <li><a href="https://www.linkedin.com/in/andrewatkinsonvs" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
           </li>
         </ul>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-6 col-lg-offset-3">
-        <p class="copyright">Copyright &copy; 2014 - <a href="#">Atko.me</a>
+        <p class="copyright">Copyright &copy; 2017 - <a href="#">Atko.me</a>
         </p>
       </div>
     </div>
