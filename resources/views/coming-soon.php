@@ -58,9 +58,9 @@
         <h2 class="subtitle">We're working hard to launch our website and we'll be ready very soon</h2>
         <br/>
 
-        <form class="form-inline validate signup" action="#" method="get" role="form">
+        <form class="form-inline validate signup" action="/" method="post" role="form">
           <div class="form-group">
-            <input type="email" class="form-control" name="EMAIL" id="exampleInputEmail1" placeholder="Enter your email address">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email address">
           </div>
           <input type="submit" name="subscribe" value="Get notified!" class="btn btn-theme">
         </form>

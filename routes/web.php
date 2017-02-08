@@ -16,6 +16,6 @@ $app->get('/', [
   'middleware' => 'auth'
 ]);
 
-$app->match(['get', 'post'], '/coming-soon', function () {
+$app->get('/coming-soon', function () {
   return view('coming-soon');
 });
