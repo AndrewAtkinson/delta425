@@ -19,3 +19,7 @@ $app->get('/', [
 $app->get('/coming-soon', function () {
   return view('coming-soon');
 });
+
+$app->post('/coming-soon', [
+  'uses' => 'HomeController@store',
+]);

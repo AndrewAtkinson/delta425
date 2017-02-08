@@ -18,4 +18,9 @@ class HomeController extends Controller
     {
       dd('works');
     }
+
+    public function store()
+    {
+      response()->json(['result' => 'success']);
+    }
 }
