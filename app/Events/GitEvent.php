@@ -22,6 +22,6 @@ class GitEvent extends Event
       'cd /home/forge/delta425.atko.me ;git pull origin master;'
     );
     //Mail::send($output, function($msg) { $msg->to([env('APP_EMAIL')]); $msg->from(['site@atko.me']); });
-    dd($output);
+    response()->json(['result' => 'success']);
   }
 }
