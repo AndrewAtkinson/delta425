@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Events;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Contracts\Mail\Mailer;
+//use Illuminate\Support\Facades\Mail;
+//use Illuminate\Contracts\Mail\Mailer;
 
 class GitEvent extends Event
 {
