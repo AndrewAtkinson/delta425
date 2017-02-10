@@ -15,7 +15,7 @@ $app->get('/', [
   'uses' => 'HomeController@index',
   'middleware' => 'auth'
 ]);
-$app->get('/deploy', [
+$app->post('/deploy', [
   'uses' => 'HomeController@deploy',
 ]);
 
