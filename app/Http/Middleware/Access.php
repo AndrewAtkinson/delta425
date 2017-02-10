@@ -17,7 +17,7 @@ class Access
    */
   public function handle($request, Closure $next, $guard = null)
   {
-    if ((!$this->check_dev_ip($request) || !$this->check_headers($request)) && $this->debug_mode() && $this->check_route($request)) {
+    if (!$this->check_deploy && (!$this->check_dev_ip($request) || !$this->check_headers($request)) && $this->debug_mode() && $this->check_route($request)) {
       return redirect('coming-soon');
     }
     return $next($request);
@@ -56,5 +56,10 @@ class Access
   public function check_route($request)
   {
     return $request->path() != 'coming-soon';
+  }
+
+  public function check_deploy($request)
+  {
+    return $request->path() != 'deploy';
   }
 }
