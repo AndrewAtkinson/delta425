@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use Event;
+use App\Events\GitEvent as GitEvent;
 
 class HomeController extends Controller
 {
