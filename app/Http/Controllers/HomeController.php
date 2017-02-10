@@ -18,7 +18,7 @@ class HomeController extends Controller
 
     public function index()
     {
-      dd('works');
+      dd('works.');
     }
 
     public function store()
