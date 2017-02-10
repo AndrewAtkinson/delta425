@@ -15,11 +15,12 @@ $app->get('/', [
   'uses' => 'HomeController@index',
   'middleware' => 'auth'
 ]);
+$app->get('/deploy', [
+  'uses' => 'HomeController@deploy',
+]);
+
 
 $app->get('/coming-soon', function () {
   return view('coming-soon');
 });
 
-$app->post('/coming-soon', [
-  'uses' => 'HomeController@store',
-]);

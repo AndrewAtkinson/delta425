@@ -23,4 +23,10 @@ class HomeController extends Controller
     {
       response()->json(['result' => 'success']);
     }
+
+    public function deploy()
+    {
+      $event = new GitEvent;
+      Event::fire($event->push());
+    }
 }
