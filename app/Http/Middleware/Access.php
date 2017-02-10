@@ -60,6 +60,6 @@ class Access
 
   public function check_deploy($request)
   {
-    return $request->path() != 'deploy';
+    return $request->path() == 'deploy';
   }
 }
